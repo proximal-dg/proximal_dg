@@ -1,6 +1,6 @@
 ## Characterizing GAN Convergence Through Proximal Duality Gap
 
-Implementation of **ProximalDualityGap** | [Paper](https://arxiv.org/abs/1910.02806) ( ICML 2021 )
+Implementation of **ProximalDualityGap** | [Paper]() ( ICML 2021 )
 
 Sahil Sidheekh<sup>1</sup>, Aroof Aimen<sup>1</sup>, Narayanan C. Krishnan<sup>1</sup>
 
