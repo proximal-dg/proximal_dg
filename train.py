@@ -34,7 +34,7 @@ def run(exp_dir,network_params,dataloader,losses_list,img_size=32,epochs=100,ncr
     f.close()
     
     train_loader, val_loader, test_loader = dataloader(batch_size=batch_size,img_size=img_size)
-    metrics_list= [ClassifierScore()]#,FrechetDistance(dataloader=train_loader)]
+    metrics_list= [ClassifierScore()]
 
     if("proximal" in exp_dir):
         trainer = ProximalTrainer(
@@ -82,7 +82,7 @@ if __name__  == "__main__":
     parser          = argparse.ArgumentParser()
     parser.add_argument('--arg', type=json.loads)
     exp_args        = parser.parse_args().arg
-    exp_name        = "divergence"      if "exp_name" not in exp_args else exp_args["exp_name"]
+    exp_name        = "convergence"  if "exp_name" not in exp_args else exp_args["exp_name"]
     model           = "SNGAN"    if "model" not in exp_args else exp_args["model"]
     dataset         = "MNIST"    if "dataset" not in exp_args else exp_args["dataset"]
     loss_type       = "minimax"  if "loss_type" not in exp_args else exp_args["loss_type"]

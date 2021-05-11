@@ -243,7 +243,7 @@ class DiscriminatorLoss(nn.Module):
 
 
 class ProximalDiscriminatorLoss(DiscriminatorLoss):
-    r"""Base class for all discriminator losses.
+    r"""Base class for all proximal discriminator losses.
 
     .. note:: All Losses meant to be minimized for optimizing the Discriminator must subclass this.
 
@@ -396,7 +396,7 @@ class ProximalDiscriminatorLoss(DiscriminatorLoss):
 
 
 class ProximalGeneratorLoss(GeneratorLoss):
-    r"""Base class for all generator losses.
+    r"""Base class for all proximal generator losses.
 
     .. note:: All Losses meant to be minimized for optimizing the Generator must subclass this.
 
