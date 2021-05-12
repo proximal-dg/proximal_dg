@@ -17,12 +17,14 @@ alt="VIDEO" width="700" border="10" /></a> -->
 Our implementation is based on the [torchgan](https://github.com/torchgan/torchgan) framework and supports GAN architectures: *WGAN*,*SNGAN* over *MNIST*, *CIFAR10* and *CELEB-A* datasets.
 
 #### To train :
-```
+
+```python
 python train.py --arg '{"model":"WGAN-WC","loss_type":"wgan","dataset":"CIFAR-10","channels":3,"img_size":32,"step_channels":32,"epochs":200,"ncritic":1,"resume":1,"gpu":0,"sample_size":100,"nrow":10}'
 ```
 
 #### To evaluate :
-```
+
+```python
 python evaluate.py --arg '{"model":"WGAN-WC","loss_type":"wgan","dataset":"CIFAR-10","channels":3,"img_size":32,"step_channels":32,"epochs":200,"ncritic":5,"gpu":0,"sample_size":100,"nrow":10}'
 ```
 
@@ -31,7 +33,7 @@ python evaluate.py --arg '{"model":"WGAN-WC","loss_type":"wgan","dataset":"CIFAR
 
 If you find the code/theory for Proximal Duality Gap useful in your research, kindly consider citing the following paper.
 
-```
+```python
 @misc{sidheekh2021characterizing,
       title={Characterizing GAN Convergence Through Proximal Duality Gap}, 
       author={Sahil Sidheekh and Aroof Aimen and Narayanan C. Krishnan},
@@ -48,7 +50,7 @@ If you find the code/theory for Proximal Duality Gap useful in your research, ki
 
 This project is distributed under [MIT license](LICENSE).
 
-```
+```c
 Copyright (c) 2020-present NAVER Corp.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
