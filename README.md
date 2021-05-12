@@ -1,6 +1,6 @@
 ## Characterizing GAN Convergence Through Proximal Duality Gap
 
-Implementation of **ProximalDualityGap** | [Paper]() ( ICML 2021 )
+Implementation of **ProximalDualityGap** | [Paper](https://arxiv.org/abs/2105.04801) ( ICML 2021 )
 
 Sahil Sidheekh<sup>1</sup>, Aroof Aimen<sup>1</sup>, Narayanan C. Krishnan<sup>1</sup>
 
@@ -29,8 +29,17 @@ python evaluate.py --arg '{"model":"WGAN-WC","loss_type":"wgan","dataset":"CIFAR
 
 ## How to cite
 
-```
+If you find the code/theory for Proximal Duality Gap useful in your research, kindly consider citing the following paper.
 
+```
+@misc{sidheekh2021characterizing,
+      title={Characterizing GAN Convergence Through Proximal Duality Gap}, 
+      author={Sahil Sidheekh and Aroof Aimen and Narayanan C. Krishnan},
+      year={2021},
+      eprint={2105.04801},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 
 ```
 
