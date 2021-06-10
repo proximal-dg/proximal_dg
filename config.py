@@ -147,6 +147,4 @@ def get_losses_list(name="minimax",lamda_prox=0.01,steps=15):
     losses["proximal_ns_minimax"]   = [ProximalMinimaxGeneratorLoss(nonsaturating=True,proximal_discriminator_loss=MinimaxDiscriminatorLoss(),lamda_prox=lamda_prox,steps=steps), MinimaxDiscriminatorLoss(), ProximalMinimaxDiscriminatorLoss(lamda_prox=lamda_prox,steps=steps)]
     losses["proximal_wgan"]         = [ProximalWassersteinGeneratorLoss(proximal_discriminator_loss=WassersteinDiscriminatorLoss(clip=(-0.01, 0.01)),lamda_prox=lamda_prox,steps=steps),WassersteinDiscriminatorLoss(clip=(-0.01, 0.01)),ProximalWassersteinDiscriminatorLoss(clip=(-0.01, 0.01),lamda_prox=lamda_prox,steps=steps)]
 
-    # losses["proximal_minimax_train"]      = [ProximalMinimaxDiscriminatorLoss(lamda_prox=lamda_prox),MinimaxGeneratorLoss(nonsaturating=True)]
-    
     return losses[name]
